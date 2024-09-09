@@ -1,0 +1,229 @@
+<html>
+    <head>
+        <title>Put It Wisely</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0)), url("fact.jpeg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            font-family: 'Cambria';
+        }
+
+        /*link*/
+        a:link {
+            color: rgb(255, 255, 255);
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:visited {
+            color: rgb(119, 250, 255);
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover {
+            color: rgb(217, 254, 255);
+            background-color: transparent;
+            text-decoration: underline;
+            text-decoration-color: rgb(119, 250, 255);
+        }
+        a:active {
+            color: rgb(119, 250, 255);
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        /*title*/
+        .title {
+        color:rgb(255, 255, 255);
+        font-size: 40px;
+        text-align: left;
+        margin-top: -1px;
+        display: flex;
+        animation: fadeIn 5s;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0;}
+            100% { opacity: 1;}
+        }
+
+        /*text*/
+        .text {
+            font-size: 20px;
+            color: #ffffff;
+            margin-top: 10px;
+            line-height: 15px;
+            animation: FadeIn 5s;
+        }
+
+        @keyframes FadeIn {
+            0% { opacity: 0;}
+            50% {opacity: 0;}
+            100% { opacity: 1;}
+        }
+
+        mark {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 5px;
+            cursor: pointer;
+            color:#ffffff
+        }
+
+        .menu {
+            color: #ffffff;
+            font-size: 25px;
+        }
+
+        .survei {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.9);
+            overflow-x: hidden;
+            transition: 1s;
+            padding-top: 60px;
+            text-align: center;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 30px;
+            color: #8a8a8a;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #ffffff;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25 px;
+            font-size: 40px;
+            margin-left: 50 px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            word-spacing: 10px;
+        }
+
+        #LIST {
+            display: inline;
+        }
+
+        .cntr{
+            height: 200px;
+            position: relative;
+        }
+        
+        .center{
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        /*next*/
+        button {
+            font-family: 'Cambria';
+            position: relative;
+            overflow: hidden;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 0.5rem 2rem;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 0.5rem rgba(0, 0, 0, 2);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            margin-top: -60px;
+            cursor: pointer;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div id="sdnv" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+            </a>
+            <a href="index.html">Homepage</a>
+            <a href="tentangkami.html">Tentang Kami</a>
+            <a href="tahukahkau.html">Tahukah Kamu?</a>
+            <a href="tentangsampah.html">Seputar Sampah</a>
+            <a href="aiw.html">AIW (Ask It Wisely)</a>
+            <a href="https://quizizz.com/embed/quiz/66d42d8d7de2b132d6008c1f"target="_blank">Roleplay-based Quiz</a>
+            <a href="helpus.html">Help Us</a>
+            <a href="https://forms.gle/tYAccfhxyn3P8yYv7" target="_blank">Survei</a>
+        </div>
+
+        <div class="menu">
+                <div id="LIST">
+                    <span align="left" style="font-size: 25px; cursor: pointer" onclick="openNav()">&#9776;
+                    Menu</span>
+                    <a href="https://forms.gle/tYAccfhxyn3P8yYv7" target="_blank"><mark>Survei</mark></a>
+                </div>
+        </div>
+        
+        <!--js for the navigation bar-->
+        <script>
+            function openNav() {
+                document.getElementById("sdnv").style.width="100%";
+            }
+            function closeNav() {
+                document.getElementById("sdnv").style.width="0";
+            }
+        </script>
+
+        <div class="title">
+            <h2>Tahukah Kamu?</h2>
+        </div>
+
+        <div class="text">
+            <ol type="1">
+                <li><a href="https://www.kemenkopmk.go.id/72-juta-ton-sampah-di-indonesia-belum-terkelola-dengan-baik"target="_blank">Jumlah timbunan sampah Indonesia mencapai 21.1 juta ton (2022)</a></li>
+                <li><a href="https://www.kompas.com/sains/read/2022/02/05/210000123/jenis-sampah-yang-paling-lama-diuraikan-dan-cara-menguranginya"target="_blank">Beberapa sampah anorganik terurai dalam 1 juta tahun</a></li>
+                <li><a href="https://travel.kompas.com/read/2022/06/22/132352227/80-persen-sampah-di-laut-adalah-sampah-dari-daratan"target="_blank">Sekitar 80% sampah laut berasal dari sampah daratan</a></li>
+                <li><a href="https://goodstats.id/article/indonesia-penyumbang-sampah-sisa-makanan-terbesar-di-asean-hOnJP"target="_blank">Indonesia memproduksi sampah makanan terbanyak di Asia Tenggara (20,93 juta kg/tahun)</a></li>
+                <li><a href="https://goodstats.id/article/indonesia-penyumbang-sampah-sisa-makanan-terbesar-di-asean-hOnJP"target="_blank">Kerugian akibat sampah makanan mencapai Rp231-551 triliun (setara dengan kontribusi ke PDB sebesar 4% - 5%/tahun)</a></li>
+                <li><a href="https://jogja.tribunnews.com/2023/07/25/100-kota-dan-kabupaten-penghasil-sampah-terbanyak-di-indonesia-ada-sleman-dan-gunungkidul"target="_blank">Beberapa kota/kabupatan penghasil sampah terbanyak di Indonesia: Jakarta Timur, Tangerang, dan Bekasi</a></li>
+                <li><a href="https://waste4change.com/blog/fakta-daur-ulang-yang-mengejutkan/"target="_blank">Sampah plastik yang mampu terdaur ulang hanya mencapai kurang dari 10% (data 2019)</a></li>
+            </ol>
+        </div>
+
+        <div class="cntr">
+            <div class="center">
+                <button><a href="tentangsampah.html">Next</a></button>
+            </div>
+        </div>
+    </body>
+    </html>

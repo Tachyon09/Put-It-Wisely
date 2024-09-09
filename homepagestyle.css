@@ -1,0 +1,189 @@
+html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0)), url("organik.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            font-family: 'Cambria';
+        }
+
+        /*link*/
+        a:link {
+            color: rgb(255, 255, 255);
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:visited {
+            color: rgb(119, 250, 255);
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover {
+            color: rgb(217, 254, 255);
+            background-color: transparent;
+            text-decoration: underline;
+            text-decoration-color: rgb(119, 250, 255);
+        }
+        a:active {
+            color: rgb(119, 250, 255);
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        /*title*/
+        .title {
+        color:rgb(255, 255, 255);
+        font-size: 60;
+        text-align: center;
+        margin-top: -1px;
+        display: flex;
+        animation: fadeIn 5s;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0;}
+            100% { opacity: 1;}
+        }
+
+        /*divider text*/
+        .title:before, .title::after {
+        flex-grow: 1;
+        display: flex;
+        content: '';
+        background-color: rgb(255, 255, 255);
+        height: 5px;
+        margin-top: 120px;
+        }
+
+        /*subtitle*/
+        .subtitle {
+            font-size: 25px;
+            color: white;
+            text-align: center;
+            margin-top: -120px;
+            animation: FadeIn 5s;
+        }
+
+        @keyframes FadeIn {
+            0% { opacity: 0;}
+            50% {opacity: 0;}
+            100% { opacity: 1;}
+        }
+
+        /*text*/
+        .text {
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            margin-top: 70px;
+            line-height: 15px;
+            animation: fadingin 8s;
+        }
+
+        @keyframes fadingin {
+            0% { opacity: 0;}
+            50% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        .cntr{
+            height: 200px;
+            position: relative;
+        }
+        
+        .center{
+            margin: 0;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        /*next*/
+        button {
+            font-family: 'Cambria';
+            position: relative;
+            overflow: hidden;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 0.5rem 2rem;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 0.5rem rgba(0, 0, 0, 2);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            margin-top: 100px;
+            cursor: pointer;
+        }
+        
+        mark {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 5px;
+            cursor: pointer;
+            color:#ffffff;
+        }
+
+        .menu {
+            color: #ffffff;
+            font-size: 25px;
+        }
+
+        .survei {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.9);
+            overflow-x: hidden;
+            transition: 1s;
+            padding-top: 60px;
+            text-align: center;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 30px;
+            color: #8a8a8a;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #ffffff;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25 px;
+            font-size: 40px;
+            margin-left: 50 px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            word-spacing: 10px;
+        }
+
+        li {
+            display: inline;
+        }

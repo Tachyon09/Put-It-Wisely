@@ -1,0 +1,380 @@
+<html>
+    <head>
+        <title>Put It Wisely</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="tentangsampah.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0)), url("sunsetrash.jpeg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            font-family: 'Cambria';
+        }
+
+        /*link*/
+        a:link {
+            color: rgb(255, 255, 255);
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:visited {
+            color: rgb(119, 250, 255);
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover {
+            color: rgb(217, 254, 255);
+            background-color: transparent;
+            text-decoration: underline;
+            text-decoration-color: rgb(119, 250, 255);
+        }
+        a:active {
+            color: rgb(119, 250, 255);
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        /*title*/
+        .title {
+        color:rgb(255, 255, 255);
+        font-size: 60;
+        text-align: center;
+        margin-top: -1px;
+        display: flex;
+        animation: fadeIn 5s;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0;}
+            100% { opacity: 1;}
+        }
+
+        /*divider text*/
+        .title:before, .title::after {
+        flex-grow: 1;
+        display: flex;
+        content: '';
+        background-color: rgb(255, 255, 255);
+        height: 5px;
+        margin-top: 120px;
+        }
+
+        /*subtitle*/
+        .subtitle {
+            font-size: 25px;
+            color: white;
+            text-align: center;
+            margin-top: -120px;
+            animation: FadeIn 5s;
+        }
+
+        @keyframes FadeIn {
+            0% { opacity: 0;}
+            50% {opacity: 0;}
+            100% { opacity: 1;}
+        }
+
+        /*text*/
+        .text {
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            margin-top: 70px;
+            line-height: 15px;
+            animation: fadingin 8s;
+        }
+
+        @keyframes fadingin {
+            0% { opacity: 0;}
+            50% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        .cntr{
+            height: 200px;
+            position: relative;
+        }
+        
+        .center{
+            margin: 0;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        /*next*/
+        button {
+            font-family: 'Cambria';
+            position: relative;
+            overflow: hidden;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 0.5rem 2rem;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 0.5rem rgba(0, 0, 0, 2);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            margin-top: 100px;
+            cursor: pointer;
+        }
+        
+        mark {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 5px;
+            cursor: pointer;
+            color:#ffffff;
+        }
+
+        .menu {
+            color: #ffffff;
+            font-size: 25px;
+        }
+
+        .survei {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.9);
+            overflow-x: hidden;
+            transition: 1s;
+            padding-top: 60px;
+            text-align: center;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 30px;
+            color: #8a8a8a;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #ffffff;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25 px;
+            font-size: 40px;
+            margin-left: 50 px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            word-spacing: 10px;
+        }
+
+        li {
+            display: inline;
+        }
+
+        
+
+    </style>
+    </head>
+    
+    <body>
+        <script src="confetti2.js"></script>
+        <div id="sdnv" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+            </a>
+            <a href="index.html">Homepage</a>
+            <a href="tentangkami.html">Tentang Kami</a>
+            <a href="tahukahkau.html">Tahukah Kamu?</a>
+            <a href="tentangsampah.html">Seputar Sampah</a>
+            <a href="aiw.html">AIW (Ask It Wisely)</a>
+            <a href="https://quizizz.com/embed/quiz/66d42d8d7de2b132d6008c1f" target="_blank">Roleplay-based Quiz</a>
+            <a href="helpus.html">Help Us</a>
+            <a href="https://forms.gle/tYAccfhxyn3P8yYv7" target="_blank">Survei</a>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><span align="left" style="font-size: 25px; cursor: pointer" onclick="openNav()">&#9776;
+                Menu</span></li>
+                <li><a href="https://forms.gle/tYAccfhxyn3P8yYv7" target="_blank"><mark>Survei</mark></a></li>
+            </ul>
+        </div>
+        
+        <!--js for the navigation bar-->
+        <script>
+            function openNav() {
+                document.getElementById("sdnv").style.width="100%";
+            }
+            function closeNav() {
+                document.getElementById("sdnv").style.width="0";
+            }
+        </script>
+
+        <div class="title">
+            <h2 align="center">Seputar Sampah</h2>
+        </div>
+
+        <!--ACCORDION CONTAINER-->
+        <section class="accordion container">
+            <div class="accordion__container">
+
+                <!--ITEM #1-->
+                <div class="accordion__item">
+                    <header class="accordion__header">
+                        <i class='bx bx-plus accordion__icon'></i>
+                        <h3 class="accordion__title">Jenis Limbah Plastik</h3>
+                    </header>
+    
+                    <div class="accordion__content">
+                        <p class="accordion__description">
+                            PET (Polyethylene Terephtalate) ⇒ botol kemasan plastik air mineral dan lainnya <br>
+                            HDPE (Polyethylene densitas tinggi) ⇒ kantung belanja, karton susu, botol jus, botol shampoo, botol kemasan obat, dan lainnya <br>
+                            PVC (Polyvinyl Chloride) <br> ⇒ pipa, kartu kredit dan lainnya
+                            LDPE (Low Density Polyethylene) ⇒ kantong plastik, bubble wrap, gelas minuman, dan lainnya<br>
+                            PP (Polypropylene) ⇒ wadah makanan panas, kotak DVD/CD, botol, dan lainnya<br>
+                            PS (Polystyrene/Styrofoam) ⇒ wadah makanan, peralatan makan, karton telur, dan lainnya<br>
+                            Polycarbonate (PC) ⇒ kacamata, botol bayi, barang elektronik, dan lainnya
+                        </p>
+                    </div>
+                </div>
+
+                <!--ITEM #2-->
+                <div class="accordion__item">
+                    <header class="accordion__header">
+                        <i class='bx bx-plus accordion__icon'></i>
+                        <h3 class="accordion__title">Pemakan Plastik atau Styrofoam</h3>
+                    </header>
+    
+                    <div class="accordion__content">
+                        <p class="accordion__description">
+                            Superworm, larva dari Kumbang Jerman (Zophobas morio) ternyata sangat doyan memakan polistiren.</a>
+                            Selain itu, mealworm, larva dari kumbang Tenebrio molitor, juga suka memakan styrofoam.
+                            Bahkan mealworm dapat mencerna styrofoam kurang dari 24 jam dan mengubahnya menjadi
+                            CO<sup>2</sup></a>
+                            Sumber: <a href="https://sains.kompas.com/read/2015/11/18/16312261/Inilah.Mealworm.Hewan.Pemangsa.Styrofoam" target="_blank"><mark>Sains.Kompas.com</mark></a>
+                        </p>
+                    </div>
+                </div>
+
+                <!--ITEM #3-->
+                <div class="accordion__item">
+                    <header class="accordion__header">
+                        <i class='bx bx-plus accordion__icon'></i>
+                        <h3 class="accordion__title">Sampah Anorganik</h3>
+                    </header>
+    
+                    <div class="accordion__content">
+                        <p class="accordion__description">
+                            Sampah yang dihasilkan dari bahan-bahan non-hayati,
+                            baik berupa produk sintetik maupun hasil proses teknologi. <br>
+                            Contoh: botol plastik, plastik, kaca, dan lainnya
+                        </p>
+                    </div>
+                </div>
+
+                <!--ITEM #4-->
+                <div class="accordion__item">
+                    <header class="accordion__header">
+                        <i class='bx bx-plus accordion__icon'></i>
+                        <h3 class="accordion__title">Sampah Organik</h3>
+                    </header>
+    
+                    <div class="accordion__content">
+                        <p class="accordion__description">
+                            Sampah yang berasal dari sisa makhluk hidup, mudah terurai secara alami. <br>
+                            Contoh: limbah sayur, cangkang telur, limbah buah, dan lainnya.
+                        </p>
+                    </div>
+                </div>
+
+                <!--ITEM #5-->
+                <div class="accordion__item">
+                    <header class="accordion__header">
+                        <i class='bx bx-plus accordion__icon'></i>
+                        <h3 class="accordion__title">Penggolongan sampah berdasarkan kriteria penguraiannya</h3>
+                    </header>
+
+                <div class="accordion__content">
+                    <p class="accordion__description">
+                        ⇒ B1: limbah yang dapat dengan cepat dan mudah diuraikan oleh tanah <br>
+                        Contoh: sampah organik (sisa makanan dari bahan alami, daun, dan lainnya) <br>
+                        ⇒ B2:  limbah yang dapat diruaikan oleh tanah tapi memakan waktu yang cukup lama <br>
+                        Contoh: botol plastik, plastik kresek, bungkus produk industri, kaca dan lainnya <br>
+                        ⇒ B3: limbah yang mengandung bahan berbahaya dan beracun. <br>
+                        Contoh: limbah industri, baterai, detergen, dan lainnya
+
+                    </p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <script>
+            /*=============== ACCORDION ===============*/
+            const accordionItems = document.querySelectorAll('.accordion__item')
+            // 1. Select each item
+            accordionItems.forEach((item) =>{
+                const accordionHeader = item.querySelector('.accordion__header')
+            // 2. Select each click of the header
+            accordionHeader.addEventListener('click', () =>{
+                // 7. Create the variable
+                const openItem = document.querySelector('.accordion-open')
+                // 5. Call the toggle item function
+                toggleItem(item)
+                // 8. Validate if the class exists
+                if(openItem && openItem!== item){
+                    toggleItem(openItem)
+                }
+            })
+        })
+        // 3. Create a constant type function
+        const toggleItem = (item) =>{
+            // 3.1 Create the variable
+            const accordionContent = item.querySelector('.accordion__content')
+            
+            // 6. If there is another element that contains the accorion-open class, remove its class
+            if(item.classList.contains('accordion-open')){
+                accordionContent.removeAttribute('style')
+                item.classList.remove('accordion-open')
+            }else{
+                // 4. Add the maximum height of the contentt
+                accordionContent.style.height = accordionContent.scrollHeight + 'px'
+                item.classList.add('accordion-open')
+            }
+        }
+
+        </script>
+    
+        <div class="cntr">
+            <div class="center">
+                <button><a href="aiw.html">Next</a></button>
+            </div>
+        </div>
+
+    </body>
+</html>
